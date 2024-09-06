@@ -1,0 +1,548 @@
+
+*{
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* overflow: hidden; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+header{
+   
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    margin-bottom: 7vh;
+}
+.header-image{
+    
+    position: absolute;
+    top: -20vh;
+    z-index: -1;
+}
+.nav{
+    display: flex;
+    margin: 1vh 10vh;
+    justify-content: space-between;
+    color: white;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    
+}
+.nav-bar{
+    display: flex;
+    
+}
+.nav-bar li{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    padding-left: 30px;
+   list-style: none;
+  
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 7vh;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add horizontal padding */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Example fix for .white class */
+.white {
+    position: absolute;
+    background: white; /* Added missing ; */
+    bottom: 3px;
+    align-items: center;
+    border-radius: 0 0 15px 15px; /* Fixed typo (15p -> 15px) */
+    width: 100%;
+    height: 25%;
+    z-index: 2;
+}
+
+.logo{
+    width: 20vw;
+}
+.head h3{
+    font-size: 2em;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.search{
+    display: flex;
+    width: 100%; 
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    background: white;
+    padding: 5px ;
+    
+}
+.search input{
+     outline: none;
+    border: none;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 15px; 
+  
+}
+.search p{
+    color: grey;
+    border-right: 1px solid grey;
+    font-size: 15px;
+    padding-right: 10px;
+}
+.search i:first-child{
+    font-size: 20px;
+    color: rgb(252, 119, 119);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.search i{
+    color: grey;
+    padding-left: 10px;
+}
+.sec-1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13vh;
+}
+.box{
+    position: relative;
+    width: 265px;
+    box-shadow: 0 1px 2px gray;
+    margin: 3px 5px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: rgb(243, 240, 240);
+}
+
+.box img{
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid grey;
+    z-index: -1;
+}
+.white{
+    position: absolute;
+    background: white
+    ;
+    bottom: 3px;
+    align-items: center;
+    border-radius: 0 0 15px 15p;
+    width: 100%;
+    height: 25%;
+    z-index: 2;
+    
+}
+.white p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: rgb(56, 56, 56);
+    letter-spacing: 0.7px;
+}
+.middle,.end{
+    margin: 60px 150px;
+}
+.sec-2 h2{
+    font-size: 2.1rem;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.sec-2 div{
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+}
+.sec-2 h6{
+    margin: 0;
+    font-size: 1em;
+    font-weight: lighter;
+    color:rgb(99, 98, 98);
+}
+.fa-caret-right,.sec-2 span{
+    color: rgb(248, 117, 117);
+
+}
+.box-1{
+    width: 255px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    margin: 5px;
+
+}
+.box-1 div{
+   
+    position: absolute;
+    background: linear-gradient(transparant,black);
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+}
+.box-1 div span:first-child{
+   display: inline-block;
+   color: white;
+   padding: 15px;
+   font-size: 1rem;
+   padding-bottom: 5px;
+}
+.box-1 i{
+    color: white;
+    padding-bottom: 15px;
+
+}
+
+
+.sec-3{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 130px;
+    justify-content: space-between;
+}
+.middle h1{
+    font-size: 2.1rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: 50px;
+    color: rgb(56, 56, 56);
+
+}
+.sec-4{
+    display: grid;
+    justify-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    grid-template-columns: 340px 340px 340px;
+    grid-template-rows: auto;
+
+}
+.box-2{
+    border: 1px solid rgb(235, 233, 233);
+    box-shadow: 0px 1px 3px rgb(226, 233, 233);
+    width: 340px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.box-2 div{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.box-2 div span{
+    color: rgb(65, 64, 64);
+    font-size: 1.2rem;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis ;
+    white-space: nowrap;
+    
+}
+.sec-5{
+    display: flex;
+    margin: 90px 0;
+    padding: 40px 0;
+    justify-content: center;
+    background-color: rgb(255, 248, 248);
+
+}
+.flex{
+   display: flex; 
+}
+.condact{
+    width: 760px;
+    overflow: hidden;
+}
+.condact img{
+    width: 350px;
+    height: 450px;
+    padding-right: 40px;
+}
+.address{
+    width: 470px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.address p{
+    padding-bottom: 10px;
+    font-size: 0.95rem;
+    color: rgb(92, 91, 91);
+}
+.address h2{
+  font-size: 2.7rem;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  color: rgb(34, 34, 34); 
+}
+.radio{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 230px;
+    padding-bottom: 20px;
+}
+.radio label{
+    font-size: 1.1rem;
+    color: rgb(49, 49, 49);
+
+
+}
+.radio [type="radio"]{
+   accent-color: rgb(255,92,92); 
+}
+.email{
+    position: relative;
+}
+.email input{
+    height: 46px;
+    border-radius: 5px;
+    width: 270px;
+    outline: rgb(255, 92, 92);
+    border: 1px solid rgb(184, 183, 183);
+    font-size: 1.3rem;
+    padding-left: 15px;
+
+}
+.place{
+    position: absolute;
+    font-size: 1.3rem;
+    left: 15px;
+    top: 13px;
+    color: grey;
+    font-weight: lighter;
+}
+.email button{
+    width: 150px;
+    border-radius: 6px;
+    border: 1px solid rgb(253, 104, 104);
+    background-color: rgb(253, 104, 104);
+    font-size: 1.1rem;
+    margin-left: 6px;
+    color: white;
+
+}
+.download{
+    font-size: 0.7rem;
+    margin-top: 27px;
+    color: grey;
+
+
+}
+.flexapp img{
+    width: 137px;
+    height: 40px;
+}
+.sec-6{
+  margin-bottom: 110px;  
+}
+.sec-6 h1{
+    font-size: 1.9rem;
+   
+    font-weight: lighter;
+    color: rgb(31, 31, 31);
+}
+.sec-6 h4{
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    font-weight: lighter;
+    color: rgb(31, 31, 31);
+}
+.sec-6 a{
+   text-decoration: none; 
+   color: grey;
+   font-size: 0.95rem;
+}
+.sec-6 i{
+   font-size: 0.3rem; 
+   padding: 6px 5px;
+   color: grey;
+}
+.end-colomn a{
+   width: 190px; 
+   font-size: 1rem;
+   display: inline-block;
+   margin: 15px 0;
+   font-weight: lighter;
+
+}
+.first img{
+    width: 128px;
+    height: 32px;
+
+}
+.sec-7{
+    padding: 40px 120px;
+    background-color: rgb(244, 244, 253);
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+}
+.first-1{
+    display: flex;
+}
+.first-1 span{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-weight: 400;
+}
+.second{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.second div{
+    
+    width: 200px;
+}
+.second h4{
+    font-weight: lighter;
+    color: rgb(22, 22, 22);
+    white-space: nowrap;
+}
+.second a{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 7px;
+    word-spacing: nowrap;
+    text-decoration: none;
+    color: gray ;
+    font-size: 0.9rem;
+}
+.second img{
+    
+    width: 137px;
+    height: 40px;
+    margin-top: 11px;
+    cursor: pointer;
+}
+.box-4{
+    display: flex;
+    flex-direction: column;
+}
+.box-4 i{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.third{
+  padding: 10px 0; 
+  font-size: 0.9rem;
+  color: grey;
+}
+button:hover {
+    background-color: #ff5c5c; /* Change background color on hover */
+    cursor: pointer; /* Pointer on hover */
+    color: white; /* Change text color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+/*------mobile---*/
+
+/* @media (max-width: 600px) {
+    .search {
+        width: 100%; /* Ensure it takes up most of the mobile screen */
+        margin: 10px 0; /* Add some spacing around it if needed */
+        display: flex; /* Ensure it's displayed */
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar {
+        flex-direction: column;
+        padding: 0;
+    }
+    .nav-bar li {
+        padding-left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .head h3 {
+        font-size: 1.5em;
+    }
+    .logo {
+        width: 50vw;
+    }
+    .sec-1, .sec-3, .sec-4 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box, .box-1, .box-2 {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+
+/* ----for tablet---*/
+@media (min-width:600px)and (max-width:992px){
+    .nav{
+       margin: 1vh 5vh; 
+    }
+    .head{
+       margin-top: 5vh; 
+    }
+    .search{
+        width: 70%;
+    }
+    .sec-1,.sec-3,.sec-4{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .box,.box-1,.box-2{
+        width: 45%;
+        margin: 10px 1.5%;
+    }
+}
+/*-----desktop------*/
+@media (min-width:992px) {
+    .nav{
+        margin: 1vh 10vh;
+    }
+    .search{
+        width: 55%;
+    }
+    .sec-1, .sec-3, .sec-4{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .box, .box-1, .box-2 {
+        width: 22%;
+      }
+
+} */
+
+
+ 
